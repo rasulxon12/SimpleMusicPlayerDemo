@@ -70,7 +70,7 @@ class MusicPlayingFragment : Fragment() {
     override fun onResume() {
         super.onResume()
 
-        if (position != 1) {
+        if (position != -1) {
             mediaPlayer = MediaPlayer.create(
                 this.requireContext(),
                 Uri.parse(MyData.list[position].musicPath)
