@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/musicListFragment">
+
+    <fragment
+        android:id="@+id/musicPlayingFragment"
+        android:name="uz.akra.mp3mediaplayerdemo.fragments.MusicPlayingFragment"
+        android:label="fragment_music_playing"
+        tools:layout="@layout/fragment_music_playing" />
+    <fragment
+        android:id="@+id/musicListFragment"
+        android:name="uz.akra.mp3mediaplayerdemo.fragments.MusicListFragment"
+        android:label="fragment_music_list"
+        tools:layout="@layout/fragment_music_list" />
+</navigation>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bg_image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B9F6CA"
+    tools:context=".fragments.MusicPlayingFragment">
+
+
+    <TextView
+        android:id="@+id/tv_thismusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="2dp"
+        android:text="3"
+        android:textSize="17sp"
+        app:layout_constraintRight_toLeftOf="@id/tv_counter"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="2dp"
+        android:text="/"
+        android:textSize="17sp"
+        app:layout_constraintRight_toLeftOf="@id/tv_allmusic"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_allmusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="10dp"
+        android:text="12"
+        android:textSize="17sp"
+        app:layout_constraintRight_toLeftOf="@id/btn_list"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <ImageView
+        android:id="@+id/btn_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_lists"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.1"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Atirgulim"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+
+        />
+
+
+    <ImageView
+        android:id="@id/image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintHeight_percent="0.43"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_name"
+        app:layout_constraintWidth_percent="0.42"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Music Author"
+        android:textSize="23sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.208"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        />
+
+    <SeekBar
+        android:id="@+id/my_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:outlineAmbientShadowColor="@color/black"
+        android:outlineSpotShadowColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_musictimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="07:12"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/my_seekbar" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:text=" / "
+        app:layout_constraintLeft_toRightOf="@id/tv_musictimer"
+        app:layout_constraintTop_toBottomOf="@id/my_seekbar" />
+
+    <TextView
+        android:id="@+id/tv_musicfintimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:text="23: 24"
+        app:layout_constraintLeft_toRightOf="@id/timer"
+        app:layout_constraintTop_toBottomOf="@id/my_seekbar" />
+
+
+    <ImageView
+        android:id="@+id/btn_replay30"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_replay_30"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn_previous"
+        app:layout_constraintTop_toBottomOf="@id/my_seekbar"
+        app:layout_constraintWidth_percent="0.09"
+
+        />
+
+    <ImageView
+        android:id="@+id/btn_previous"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_skip_previous"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintLeft_toRightOf="@id/btn_replay30"
+        app:layout_constraintRight_toLeftOf="@id/btn_play_pause"
+        app:layout_constraintTop_toBottomOf="@id/my_seekbar"
+        app:layout_constraintWidth_percent="0.12"
+
+        />
+
+    <ImageView
+        android:id="@+id/btn_play_pause"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_playy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintLeft_toRightOf="@id/btn_previous"
+        app:layout_constraintRight_toLeftOf="@id/btn_next"
+        app:layout_constraintTop_toBottomOf="@id/my_seekbar"
+        app:layout_constraintWidth_percent="0.2"
+
+        />
+
+    <ImageView
+        android:id="@+id/btn_next"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_skip_next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintLeft_toRightOf="@id/btn_play_pause"
+        app:layout_constraintRight_toLeftOf="@id/btn_skip30"
+        app:layout_constraintTop_toBottomOf="@id/my_seekbar"
+        app:layout_constraintWidth_percent="0.12"
+
+        />
+
+    <ImageView
+        android:id="@+id/btn_skip30"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_forward_30"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintLeft_toRightOf="@id/btn_next"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/my_seekbar"
+        app:layout_constraintWidth_percent="0.09"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
